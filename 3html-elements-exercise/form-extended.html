@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="textievade">Teksta ievades lauks:</label>
+
+    <textarea id="textievade" name="textievade"> </textarea>
+
+    <form action="email" method="get" class="form-example">
+      <div class="form-example">
+        <label for="email">Ieraksti tavu email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-example">
+        <label for="password">Ieraksti tavu paroli: </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div class="form-example">
+        <label for="pnumber">Ieraksti tavu telefonu ciparus: </label>
+        <input type="pnumber" name="pnumber" id="pnumber" required />
+      </div>
+      <div class="form-example">
+        <label for="number">Ieraksti ciparu:</label>
+        <input type="number" name="number" id="number" required />
+      </div>
+      <div class="form-example">
+        <label for="date">Ieraksti dienu:</label>
+        <input type="date" name="date" id="date" required />
+      </div>
+      <div class="form-example">
+        <label for="url">Ieraksti URL:</label>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="https://example.com"
+          pattern="https://.*"
+          size="30"
+          required
+        />
+      </div>
+      <div class="form-example">
+        <legend>Ko tu liec klāt pelmeņiem</legend>
+
+        <div>
+          <input type="checkbox" id="Krējums" name="Krējums" checked required />
+          <label for="Krējums">Krējums</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="Garšvielas" name="Garšvielas" />
+          <label for="Garšvielas">Garšvielas </label>
+        </div>
+        <legend>Izvēlies savu mīļāko ēdienu</legend>
+      <div>
+        <input type="radio" id="huey" name="ēdiens" value="huey" checked />
+        <label for="huey">Huey</label>
+      </div>
+      <div>
+        <input type="radio" id="sokolade" name="ēdiens" value="sokolade" />
+        <label for="sokolade">sokolade</label>
+      </div>
+    
+      <div>
+        <input type="radio" id="louie" name="ēdiens" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+
+      <div class="form-example">
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
